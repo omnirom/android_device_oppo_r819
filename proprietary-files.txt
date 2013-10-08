@@ -16,3 +16,7 @@ vendor/lib/egl/libGLESv1_CM_mtk.so
 vendor/lib/egl/libGLESv2_mtk.so
 vendor/lib/hw/gralloc.mt6589.so
 lib/hw/hwcomposer.mt6589.so
+lib/libm4u.so
+lib/libion.so
+lib/libdpframework.so
+vendor/bin/pvrsrvctl
