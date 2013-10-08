@@ -87,7 +87,7 @@ PRODUCT_PACKAGES := \
     keystore.default \
     libaudio.r_submix.default \
     libaudio.usb.default \
-    lights.default \
+    lights.mt6589 \
     local_time.default \
     power.default \
     sensors.default \
@@ -103,6 +103,10 @@ PRODUCT_PACKAGES += \
     Nfc \
     Tag \
     com.android.nfc_extras
+
+PRODUCT_PACKAGES += \
+    mkmtkbootimg
+
 
 PRODUCT_CHARACTERISTICS := nosdcard
 
