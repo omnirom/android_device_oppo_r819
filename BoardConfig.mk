@@ -42,6 +42,8 @@ include device/oppo/r819/BoardConfigCommon.mk
 
 TARGET_RECOVERY_FSTAB = device/oppo/r819/fstab.mt6589
 
+BOARD_CUSTOM_MKBOOTIMG := mkmtkbootimg
+
 #BOARD_SEPOLICY_DIRS := \
 #        device/oppo/r819/sepolicy
 

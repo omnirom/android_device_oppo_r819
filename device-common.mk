@@ -104,6 +104,10 @@ PRODUCT_PACKAGES += \
     Tag \
     com.android.nfc_extras
 
+PRODUCT_PACKAGES += \
+    mkmtkbootimg
+
+
 PRODUCT_CHARACTERISTICS := nosdcard
 
 # we have enough storage space to hold precise GC data
