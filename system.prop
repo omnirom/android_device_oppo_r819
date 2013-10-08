@@ -4,5 +4,4 @@ wifi.interface=wlan0
 #rild.libargs=-e wwan0
 
 
-# set default lcd density to TVDPI
-#ro.sf.lcd_density=213
+ro.sf.lcd_density=320

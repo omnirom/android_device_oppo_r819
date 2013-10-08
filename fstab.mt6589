@@ -4,7 +4,10 @@
 # specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
 
 
-/emmc@android           /system             ext4      ro,noatime                                                            wait
-/emmc@cache             /cache              ext4      noatime,nosuid,nodev,noauto_da_alloc,errors=panic    wait
-/emmc@usrdata           /data               ext4      noatime,nosuid,nodev,noauto_da_alloc,errors=panic    wait,encryptable=footer
-/dev/bootimg            /boot               emmc      defaults                  defaults
+/emmc@android                         /system             ext4      ro,noatime                                                            wait
+/emmc@cache                           /cache              ext4      noatime,nosuid,nodev,noauto_da_alloc,errors=panic    wait
+/emmc@usrdata                         /data               ext4      noatime,nosuid,nodev,noauto_da_alloc,errors=panic    wait,encryptable=footer
+/dev/bootimg                          /boot               emmc      defaults                  defaults
+
+# vold-managed volumes
+/devices/platform/mtk-msdc.0/mmc_host /storage/sdcard0    auto      defaults        voldmanaged=sdcard0:11,nonremovable
