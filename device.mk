@@ -30,5 +30,7 @@ $(call inherit-product, vendor/oppo/r819/r819-vendor.mk)
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.carrier=wifi-only
 
+DEVICE_RESOLUTION := 720x1280
+
 DEVICE_PACKAGE_OVERLAYS := \
     device/oppo/r819/overlay
