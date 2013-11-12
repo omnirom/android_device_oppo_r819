@@ -21,4 +21,4 @@
 # function: add_lunch_combo generic-eng
 
 add_lunch_combo full_r819-userdebug
-add_lunch_combo custom_r819-userdebug
+add_lunch_combo omni_r819-userdebug

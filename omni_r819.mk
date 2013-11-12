@@ -20,7 +20,7 @@
 #
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/custom/config/common.mk)
+$(call inherit-product, vendor/omni/config/common.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/oppo/r819/device.mk)
@@ -30,7 +30,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := custom_r819
+PRODUCT_NAME := omni_r819
 PRODUCT_DEVICE := r819
 PRODUCT_BRAND := Oppo
 PRODUCT_MODEL := R819
