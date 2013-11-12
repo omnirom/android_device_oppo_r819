@@ -118,8 +118,8 @@ PRODUCT_COPY_FILES += \
     device/oppo/r819/media_codecs.xml:system/etc/media_codecs.xml
 
 # Bluetooth config file
-PRODUCT_COPY_FILES += \
-    system/bluetooth/data/main.nonsmartphone.conf:system/etc/bluetooth/main.conf \
+#PRODUCT_COPY_FILES += \
+#    system/bluetooth/data/main.nonsmartphone.conf:system/etc/bluetooth/main.conf \
 
 
 PRODUCT_COPY_FILES += \
