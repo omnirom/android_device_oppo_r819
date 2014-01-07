@@ -15,6 +15,7 @@
 #
 
 import init.mt6589.usb.rc
+import init.modem.rc
 
 on early-init
     mount debugfs debugfs /sys/kernel/debug
@@ -35,9 +36,17 @@ on init
     symlink /mnt/shell/emulated/0 /storage/emulated/legacy
 
 on fs
+    mkdir /protect_f
+    mkdir /protect_s
+
     mount_all ./fstab.mt6589
     setprop ro.crypto.fuse_sdcard true
 
+    chown system system /protect_f
+    chmod 0771 /protect_f
+
+    chown system system /protect_s
+    chmod 0771 /protect_s
 
 on early-boot
     # set RLIMIT_MEMLOCK to 64MB
@@ -127,7 +136,8 @@ on post-fs-data
     chmod 0444 /dev/devmap
     chown root media /dev/devmap
 
-#    exec /system/vendor/bin/pvrsrvctl --start
+    # modem
+    mkdir /dev/radio 0770 radio radio
 
 
 # SGX init
