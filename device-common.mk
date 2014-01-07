@@ -29,6 +29,9 @@ PRODUCT_PROPERTY_OVERRIDES := \
     wifi.supplicant_scan_interval=15 \
     drm.service.enabled=true
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.telephony.ril_class=MediaTekRIL
+
 # Set default USB interface
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp
