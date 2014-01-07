@@ -37,8 +37,8 @@ include frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel \
-    device/oppo/r819/ueventd.mt6589.rc:root/ueventd.mt6589.rc \
-    device/oppo/r819/init.mt6589.usb.rc:root/init.mt6589.usb.rc \
+    device/oppo/r819/root/ueventd.mt6589.rc:root/ueventd.mt6589.rc \
+    device/oppo/r819/root/init.mt6589.usb.rc:root/init.mt6589.usb.rc \
     device/oppo/r819/gps.conf:system/etc/gps.conf
 
 PRODUCT_COPY_FILES += \

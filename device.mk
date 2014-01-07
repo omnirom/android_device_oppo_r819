@@ -18,8 +18,8 @@ PRODUCT_PROPERTY_OVERRIDES := \
     ro.carrier=wifi-only
 
 PRODUCT_COPY_FILES := \
-    device/oppo/r819/fstab.mt6589:root/fstab.mt6589 \
-    device/oppo/r819/init.mt6589.rc:root/init.mt6589.rc
+    device/oppo/r819/root/fstab.mt6589:root/fstab.mt6589 \
+    device/oppo/r819/root/init.mt6589.rc:root/init.mt6589.rc
 
 # the actual meat of the device-specific product definition
 $(call inherit-product, device/oppo/r819/device-common.mk)

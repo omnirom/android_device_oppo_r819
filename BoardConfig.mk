@@ -40,7 +40,7 @@ USE_CAMERA_STUB := true
 include vendor/oppo/r819/BoardConfigVendor.mk
 include device/oppo/r819/BoardConfigCommon.mk
 
-TARGET_RECOVERY_FSTAB = device/oppo/r819/fstab.mt6589
+TARGET_RECOVERY_FSTAB = device/oppo/r819/root/fstab.mt6589
 
 BOARD_CUSTOM_MKBOOTIMG := mkmtkbootimg
 
