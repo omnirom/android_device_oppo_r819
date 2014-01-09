@@ -3,5 +3,23 @@ wifi.interface=wlan0
 rild.libpath=/system/lib/mtk-ril.so
 rild.libargs=-d /dev/ttyC0
 
-
 ro.sf.lcd_density=320
+
+ril.specific.sm_cause=0
+gps.solution.combo.chip=1
+ril.external.md=0
+fmradio.driver.chip=3
+ril.current.share_modem=2
+ro.mediatek.gemini_support=true
+ro.gemini.smart_3g_switch=1
+persist.radio.fd.counter=15
+persist.radio.fd.off.counter=5
+persist.radio.fd.r8.counter=15
+persist.radio.fd.off.r8.counter=5
+persist.mtk.wcn.combo.chipid=-1
+ril.first.md=1
+ril.flightmode.poweroffMD=1
+ril.telephony.mode=1
+ril.radiooff.poweroffMD=0
+mediatek.wlan.chip=MT6628
+mediatek.wlan.module.postfix=_mt6628

@@ -87,7 +87,7 @@ service permission_check /system/bin/permission_check
     group radio
     oneshot
 
-service ccci_fsd /system/bin/logwrapper /system/xbin/strace -s 1024 /system/bin/ccci_fsd 0
+service ccci_fsd /system/bin/ccci_fsd 0
     user root
     group nvram ccci system
     class core
@@ -99,7 +99,7 @@ service ccci_fsd /system/bin/logwrapper /system/xbin/strace -s 1024 /system/bin/
 #    class core
 #    oneshot
 
-service ccci_mdinit /system/bin/logwrapper /system/xbin/strace -s 1024 /system/bin/ccci_mdinit 0
+service ccci_mdinit /system/bin/ccci_mdinit 0
     user root
     group ccci system
     class core
